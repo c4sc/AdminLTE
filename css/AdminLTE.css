@@ -330,17 +330,17 @@ table.text-center th {
     Components: navbar, logo and content header
 -------------------------------------------------
 */
-.app > .header {
+.app .logo-header {
   position: relative;
   max-height: 100px;
   z-index: 1030;
 }
-.app > .header .navbar {
+.app .logo-header .navbar {
   height: 50px;
   margin-bottom: 0;
   margin-left: 220px;
 }
-.app > .header .navbar .sidebar-toggle {
+.app .logo-header .navbar .sidebar-toggle {
   float: left;
   padding: 9px 5px;
   margin-top: 8px;
@@ -354,10 +354,10 @@ table.text-center th {
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
 }
-.app > .header .navbar .sidebar-toggle:hover .icon-bar {
+.app .logo-header .navbar .sidebar-toggle:hover .icon-bar {
   background: #f6f6f6;
 }
-.app > .header .navbar .sidebar-toggle .icon-bar {
+.app .logo-header .navbar .sidebar-toggle .icon-bar {
   display: block;
   width: 22px;
   height: 2px;
@@ -365,18 +365,18 @@ table.text-center th {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.app > .header .navbar .sidebar-toggle .icon-bar + .icon-bar {
+.app .logo-header .navbar .sidebar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-.app > .header .navbar .nav > li.user > a {
+.app .logo-header .navbar .nav > li.user > a {
   font-weight: bold;
 }
-.app > .header .navbar .nav > li.user > a > .fa,
-.app > .header .navbar .nav > li.user > a > .glyphicon,
-.app > .header .navbar .nav > li.user > a > .ion {
+.app .logo-header .navbar .nav > li.user > a > .fa,
+.app .logo-header .navbar .nav > li.user > a > .glyphicon,
+.app .logo-header .navbar .nav > li.user > a > .ion {
   margin-right: 5px;
 }
-.app > .header .navbar .nav > li > a > .label {
+.app .logo-header .navbar .nav > li > a > .label {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -391,10 +391,10 @@ table.text-center th {
   text-align: center;
   padding: 2px;
 }
-.app > .header .navbar .nav > li > a:hover > .label {
+.app .logo-header .navbar .nav > li > a:hover > .label {
   top: 3px;
 }
-.app > .header .logo {
+.app .logo-header .logo {
   float: left;
   font-size: 20px;
   line-height: 50px;
@@ -406,7 +406,7 @@ table.text-center th {
   height: 50px;
   display: block;
 }
-.app > .header .logo .icon {
+.app .logo-header .logo .icon {
   margin-right: 10px;
 }
 .right-side > .content-header {
@@ -477,16 +477,16 @@ table.text-center th {
   }
 }
 @media screen and (max-width: 560px) {
-  .app > .header {
+  .app .logo-header {
     position: relative;
   }
-  .app > .header .logo,
-  .app > .header .navbar {
+  .app .logo-header .logo,
+  .app .logo-header .navbar {
     width: 100%;
     float: none;
     position: relative!important;
   }
-  .app > .header .navbar {
+  .app .logo-header .navbar {
     margin: 0;
   }
   body.fixed > .header {
